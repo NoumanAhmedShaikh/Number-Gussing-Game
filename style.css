@@ -115,29 +115,29 @@ input:valid+label {
 }
 @media (max-width: 768px) {
     .main {
-        width: 90%; 
+        width: 70%; 
         height: auto;
         padding: 20px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     button {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     input {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     label {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
