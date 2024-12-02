@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,
+            rgb(236, 203, 72),
+            #DB8D6E,
+            #E4C9A0,
+            #ECCB48,
+            #82DFF5);
+    background-size: 400% 400%;
+    animation: wave 10s infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main {
+    width: 50%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    border-radius: 28px;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(45deg,
+            black,
+            gray);
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+
+    &:hover {
+        scale: 1.2;
+        background: linear-gradient(45deg,
+            green,
+            greenyellow);
+        border-radius: 28px;
+    }
+}
+.form-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: black;
+    color: #ffffff;
+}
+
+input:focus,
+input:valid {
+    border: 2px solid rgb(40, 179, 235);
+    color: #ffffff;
+}
+
+
+label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 4px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-weight: 500;
+    background-color:black;
+}
+
+input:focus+label,
+input:valid+label {
+    top: -8px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: black;
+}
+@media (max-width: 768px) {
+    .main {
+        width: 90%; 
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
