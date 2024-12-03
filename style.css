@@ -113,9 +113,9 @@ input:valid+label {
     color: #ffffff;
     background-color: black;
 }
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
     .main {
-        width: 70%; 
+        width: 80%; 
         height: auto;
         padding: 20px;
     }
@@ -131,6 +131,34 @@ input:valid+label {
     button {
         font-size: 16px;
         padding: 10px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+@media(max-width: 500px) {
+    .main {
+        width: 90%; 
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
     }
 
     input {
